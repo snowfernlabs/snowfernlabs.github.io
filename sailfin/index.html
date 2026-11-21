@@ -3,41 +3,71 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sailfin: Fishing Log</title>
-<style>
-:root { --ink:#1d2a27; --muted:#5b6b66; --paper:#f6f3ec; --line:#d9d3c5; --accent:#2f5d50; }
-@media (prefers-color-scheme: dark) { :root { --ink:#e9e6de; --muted:#a8b2ad; --paper:#141a19; --line:#2c3633; --accent:#8cc2ae; } }
-* { box-sizing: border-box; }
-body { margin:0; background:var(--paper); color:var(--ink); font:17px/1.6 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; }
-main { max-width: 720px; margin: 0 auto; padding: 40px 20px 64px; }
-header a, footer a { color: var(--muted); text-decoration: none; }
-h1 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; font-size: 2.4rem; line-height: 1.15; margin: 1.2rem 0 .6rem; }
-h2 { font-family: Georgia, "Times New Roman", serif; font-weight: 400; font-size: 1.45rem; margin: 2rem 0 .4rem; }
-a { color: var(--accent); }
-p.lede { font-size: 1.15rem; color: var(--muted); }
-.card { border: 1px solid var(--line); border-radius: 14px; padding: 18px 20px; margin: 18px 0; }
-.card h2 { margin-top: 0; }
-footer { margin-top: 56px; padding-top: 16px; border-top: 1px solid var(--line); font-size: .9rem; color: var(--muted); }
-li { margin: .3rem 0; }
-</style>
+<title>Sailfin: Fishing Log | Snowfern Labs</title>
+<meta name="description" content="Log catches, build an illustrated collection of 310 fish species, and track your rods, reels, and line with Sailfin for Android.">
+<link rel="canonical" href="https://snowfernlabs.com/sailfin/">
+<link rel="stylesheet" href="/assets/site.css">
 </head>
-<body>
-<main>
-<header><a href="/">Snowfern Labs</a> · <a href="/sailfin/">Sailfin</a></header>
+<body class="sailfin">
+<a class="skip" href="#main">Skip to content</a>
+<header class="site-header shell">
+<a class="wordmark" href="/">Snowfern Labs</a>
+<nav aria-label="Main"><a href="/sailfin/">Sailfin</a><a href="mailto:support@snowfernlabs.com">Contact</a></nav>
+</header>
+<main id="main" class="shell">
 
-<h1>Sailfin: Fishing Log</h1>
-<p class="lede">A private fishing log and field guide for 310 species across the US and Canada.</p>
-<ul>
-<li>Log a catch in three taps, out loud, or by typing it like a note.</li>
-<li>A field guide with a picture of every fish, look-alike tips and agency "how to catch it" advice.</li>
-<li>Personal bests, a Big Year, slams and goals: your own records, not a leaderboard.</li>
-<li>Tides and river flow nearby (US waters), weather filled in for you.</li>
-<li>Works offline. No account, no social feed, no ads. Your spots never leave your phone.</li>
-</ul>
-<p>Coming soon to Google Play.</p>
-<p><a href="/sailfin/privacy/">Privacy policy</a> · <a href="mailto:support@snowfernlabs.com">support@snowfernlabs.com</a></p>
+<section class="hero">
+<div>
+<img class="app-icon" src="/assets/sailfin-icon.png" width="72" height="72" alt="">
+<h1>Sailfin</h1>
+<p class="hero-lede">A fishing log and illustrated field guide for the U.S. and Canada.</p>
+<p>Record what you caught, see your collection fill in, and remember which setups worked.</p>
+<a class="button" href="#field-guide">Explore the field guide <span aria-hidden="true">↓</span></a>
+<p class="availability">In testing for Android.</p>
+</div>
+<figure class="screen"><img src="/assets/collection.webp" decoding="async" fetchpriority="high" alt="Sailfin Collection with illustrated fish, catch totals, and personal bests"></figure>
+</section>
+<section id="field-guide" class="guide">
+<div>
+<h2>Get to know your catch</h2>
+<p>Browse 310 illustrated freshwater and saltwater species. Read identification tips and compare similar fish, even before you’ve logged a catch.</p>
+</div>
+<figure>
+<img src="/assets/chinook-salmon.webp" loading="lazy" decoding="async" alt="Chinook salmon with dark spots across both lobes of its tail">
+<figcaption><strong>Chinook salmon</strong> · Look for black spots on both tail lobes.</figcaption>
+</figure>
+</section>
+<section class="features" aria-label="Logging and gear">
+<article>
+<h2>Record a catch</h2>
+<p>Save the fish, lure, and water you fished. Add the details you’ll want to remember next time.</p>
+<figure class="feature-screen"><img src="/assets/log.webp" loading="lazy" decoding="async" alt="Sailfin catch entry with largemouth bass selected and the Save button visible"></figure>
+</article>
+<article>
+<h2>Keep track of your line</h2>
+<p>See what you caught on your current line and what you caught before you respooled.</p>
+<figure class="feature-screen"><img src="/assets/line-history.webp" loading="lazy" decoding="async" alt="Sailfin gear history showing two spools and how many fish were caught on each"></figure>
+</article>
+</section>
+<section class="insights">
+<div>
+<h2>Look back on your season</h2>
+<p>See your catch and trip totals, the species you logged most often, and how your fishing changed over the year.</p>
+</div>
+<figure><img src="/assets/insights.webp" loading="lazy" decoding="async" alt="Sailfin Insights showing annual catch totals, trips, and top species"></figure>
+</section>
+<section class="faq" aria-labelledby="help">
+<h2 id="help">Sailfin support</h2>
+<details><summary>Do I need an account?</summary><p>No. Your catch log is stored on your device.</p></details>
+<details><summary>Can I use Sailfin offline?</summary><p>You can log catches and browse the bundled field guide offline. Live weather, water conditions, and map tiles need a connection.</p></details>
+<details><summary>How do I move my log to another phone?</summary><p>In Sailfin, use Settings → Back up to save a copy of your log. Use Settings → Restore on the new device to load that file. Restoring replaces the current log on that device.</p></details>
+<p>Questions or feedback? <a href="mailto:support@snowfernlabs.com">Email Sailfin support</a> or read the <a href="/sailfin/privacy/">privacy policy</a>.</p>
+</section>
 
-<footer>Snowfern Labs · <a href="mailto:support@snowfernlabs.com">support@snowfernlabs.com</a></footer>
 </main>
+<footer class="site-footer shell">
+<a class="wordmark" href="/">Snowfern Labs</a>
+<nav aria-label="Footer"><a href="mailto:support@snowfernlabs.com">Support</a><a href="/sailfin/privacy/">Sailfin privacy</a></nav>
+</footer>
 </body>
 </html>
