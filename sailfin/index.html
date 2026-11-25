@@ -3,9 +3,25 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Sailfin: Fishing Log | Snowfern Labs</title>
-<meta name="description" content="Log catches, build an illustrated collection of 310 fish species, and track your rods, reels, and line with Sailfin for Android.">
+<title>Sailfin: fishing log and field guide | Snowfern Labs</title>
+<meta name="description" content="Log catches in a few taps and learn 529 U.S. and Canadian fish species. No account, no ads, no subscription. In testing for Android.">
 <link rel="canonical" href="https://snowfernlabs.com/sailfin/">
+<meta name="theme-color" content="#F6F4EF" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#12110E" media="(prefers-color-scheme: dark)">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Snowfern Labs">
+<meta property="og:title" content="Sailfin: fishing log and field guide | Snowfern Labs">
+<meta property="og:description" content="Log catches in a few taps and learn 529 U.S. and Canadian fish species. No account, no ads, no subscription. In testing for Android.">
+<meta property="og:url" content="https://snowfernlabs.com/sailfin/">
+<meta property="og:image" content="https://snowfernlabs.com/assets/share.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" href="/assets/icon-192.png" type="image/png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon.png">
+<link rel="preload" href="/assets/fonts/instrument-serif.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/geist.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/assets/site.css">
 </head>
 <body class="sailfin">
@@ -18,56 +34,103 @@
 
 <section class="hero">
 <div>
-<img class="app-icon" src="/assets/sailfin-icon.png" width="72" height="72" alt="">
+<img class="app-icon" src="/assets/icon-192.png" width="72" height="72" alt="">
 <h1>Sailfin</h1>
-<p class="hero-lede">A fishing log and illustrated field guide for the U.S. and Canada.</p>
-<p>Record what you caught, see your collection fill in, and remember which setups worked.</p>
-<a class="button" href="#field-guide">Explore the field guide <span aria-hidden="true">↓</span></a>
-<p class="availability">In testing for Android.</p>
+<p class="hero-lede">A fishing log and field guide for the U.S. and Canada.</p>
+<p>Log a catch in a few taps, watch your collection of 529 species fill in, and learn every fish you might hook.</p>
+<ul class="promise" aria-label="Sailfin's promise">
+<li>No account</li><li>No ads</li><li>No subscription</li><li>Your log is kept on your phone</li>
+</ul>
+<a class="button" href="mailto:support@snowfernlabs.com?subject=Sailfin%20tester&amp;body=Hi%2C%20I%27d%20like%20to%20test%20Sailfin.%0D%0A%0D%0AThe%20email%20address%20of%20my%20Google%20Play%20account%3A%20%0D%0A">Email to join the test</a>
+<p class="availability">Sailfin is in a closed test on Google Play for Android. Email us the address of the Google
+account you use for Google Play. We use it only to add you to the test, and remove it from the tester list when you ask
+or the test ends.</p>
 </div>
-<figure class="screen"><img src="/assets/collection.webp" decoding="async" fetchpriority="high" alt="Sailfin Collection with illustrated fish, catch totals, and personal bests"></figure>
+<figure class="phone hero-shot"><img src="/assets/collection.webp" width="640" height="1428" fetchpriority="high" decoding="async" alt="Sailfin&#x27;s Collection screen: 15 of 138 Washington species caught, with paintings of rainbow and cutthroat trout"></figure>
 </section>
-<section id="field-guide" class="guide">
+
+<section class="feature">
 <div>
-<h2>Get to know your catch</h2>
-<p>Browse 310 illustrated freshwater and saltwater species. Read identification tips and compare similar fish, even before you’ve logged a catch.</p>
+<p class="label">Field guide</p>
+<h2>Know what you caught</h2>
+<p>Species pages show the fish's painting (or an outline, for the few still waiting for art), how to tell it apart,
+and the fish it's most often confused with, side by side. Many have how-to-catch tips paraphrased from state and federal fish and wildlife agencies, with each source a tap
+away.</p>
+<ul class="facts">
+<li><strong>529</strong> freshwater and saltwater species, with ranges for all 64 states and provinces</li>
+<li><strong>220</strong> species with sourced catch tips</li>
+<li><strong>55</strong> states and provinces with official record fish</li>
+<li>A typical weight for any length, from published studies for <strong>383</strong> species</li>
+</ul>
 </div>
-<figure>
-<img src="/assets/chinook-salmon.webp" loading="lazy" decoding="async" alt="Chinook salmon with dark spots across both lobes of its tail">
-<figcaption><strong>Chinook salmon</strong> · Look for black spots on both tail lobes.</figcaption>
-</figure>
+<div class="pair">
+<figure class="phone"><img src="/assets/species.webp" width="640" height="1428" loading="lazy" decoding="async" alt="Rainbow trout page: painting, 225 caught, longest 20.9 inches, and the best lure and time from your own log"></figure>
+<figure class="phone"><img src="/assets/guide.webp" width="640" height="1428" loading="lazy" decoding="async" alt="How to catch it tips with WDFW, ODFW and NYSDEC sources, the weight study, and look-alikes: cutthroat and brown trout"></figure>
+</div>
 </section>
-<section class="features" aria-label="Logging and gear">
-<article>
-<h2>Record a catch</h2>
-<p>Save the fish, lure, and water you fished. Add the details you’ll want to remember next time.</p>
-<figure class="feature-screen"><img src="/assets/log.webp" loading="lazy" decoding="async" alt="Sailfin catch entry with largemouth bass selected and the Save button visible"></figure>
-</article>
-<article>
-<h2>Keep track of your line</h2>
-<p>See what you caught on your current line and what you caught before you respooled.</p>
-<figure class="feature-screen"><img src="/assets/line-history.webp" loading="lazy" decoding="async" alt="Sailfin gear history showing two spools and how many fish were caught on each"></figure>
-</article>
-</section>
-<section class="insights">
+
+<section class="feature reverse">
 <div>
+<p class="label">Logging</p>
+<h2>Log it before the next cast</h2>
+<p>Your usual fish are first, and the rest is filled in from today: time, place, weather and what you usually keep.
+Tap the fish, tap Save.</p>
+<ul class="facts">
+<li>Say it out loud and sort it out later</li>
+<li>+1 for another of the same, from the app or a home-screen widget</li>
+<li>Type a day out like a note, or log from your photos</li>
+<li>Bring in an old log from a notes app or a spreadsheet</li>
+</ul>
+</div>
+<figure class="phone"><img src="/assets/log.webp" width="640" height="1428" loading="lazy" decoding="async" alt="Log a catch: a grid of fish paintings with largemouth bass picked and a Save button"></figure>
+</section>
+
+<section class="feature">
+<div>
+<p class="label">Trips</p>
+<h2>Every trip counts</h2>
+<p>Each day keeps its water, catches and notes. With location on, the weather, tides, water temperature and river flow
+fill in by themselves, even if you had no signal on the water. Skunked? Log it anyway.</p>
+<p>Track rods, reels and line too, if you like: what each one caught and how old the line is.</p>
+</div>
+<figure class="phone"><img src="/assets/days.webp" width="640" height="1428" loading="lazy" decoding="async" alt="Days list: today skunked, then trips to Lake Stevens, Edmonds Pier and Cottage Lake with fish counts"></figure>
+</section>
+
+<section class="feature reverse">
+<div>
+<p class="label">Insights and goals</p>
 <h2>Look back on your season</h2>
-<p>See your catch and trip totals, the species you logged most often, and how your fishing changed over the year.</p>
+<p>See when, where and on what you catch fish, your best days and months, and how one year compares with the last.
+Set your own goals, chase a Big Year or a slam, and earn badges as you go.</p>
 </div>
-<figure><img src="/assets/insights.webp" loading="lazy" decoding="async" alt="Sailfin Insights showing annual catch totals, trips, and top species"></figure>
+<figure class="phone"><img src="/assets/insights.webp" width="640" height="1428" loading="lazy" decoding="async" alt="Insights for 2026: 714 fish, 122 trips and 17 species, top species cards and totals"></figure>
 </section>
+
+<section class="privacy-note">
+<h2>Private by design</h2>
+<p>There's no account and no analytics. Your log, photos and fishing spots are kept on your phone and never sent to
+us. They leave it only when you choose: a backup or export file you save, or your phone's own Android backup. Speaking a
+catch uses your phone's speech service, which may process your voice online. Spots never appear on share cards.
+<a href="/sailfin/privacy/">Read the privacy policy</a>.</p>
+</section>
+
 <section class="faq" aria-labelledby="help">
-<h2 id="help">Sailfin support</h2>
-<details><summary>Do I need an account?</summary><p>No. Your catch log is stored on your device.</p></details>
-<details><summary>Can I use Sailfin offline?</summary><p>You can log catches and browse the bundled field guide offline. Live weather, water conditions, and map tiles need a connection.</p></details>
-<details><summary>How do I move my log to another phone?</summary><p>In Sailfin, use Settings → Back up to save a copy of your log. Use Settings → Restore on the new device to load that file. Restoring replaces the current log on that device.</p></details>
-<p>Questions or feedback? <a href="mailto:support@snowfernlabs.com">Email Sailfin support</a> or read the <a href="/sailfin/privacy/">privacy policy</a>.</p>
+<h2 id="help">Questions</h2>
+<details><summary>How do I join the test?</summary><p><a href="mailto:support@snowfernlabs.com?subject=Sailfin%20tester&amp;body=Hi%2C%20I%27d%20like%20to%20test%20Sailfin.%0D%0A%0D%0AThe%20email%20address%20of%20my%20Google%20Play%20account%3A%20%0D%0A">Email us</a> the address of the Google account you use for Google Play on your Android phone. We'll add you to the closed test and reply with the link to install Sailfin. We use the address only for the test, and remove it from the tester list when you ask or the test ends.</p></details>
+<details><summary>What does it cost?</summary><p>Nothing while it's in testing. Sailfin has no ads and no subscription.</p></details>
+<details><summary>Where does it work?</summary><p>The field guide covers the U.S. and Canada: 529 species, with a range for each of the 64 states and provinces. You can log a fish anywhere.</p></details>
+<details><summary>Does it work offline?</summary><p>Yes. Logging and the field guide work with no signal. Weather, tides and river flow fill in once you're back online, and the map needs a connection.</p></details>
+<details><summary>Does it show fishing regulations?</summary><p>No. Tips in Sailfin are not regulations. Always check your state or province's current rules before you keep a fish.</p></details>
+<details><summary>What leaves my phone?</summary><p>Your log, photos and spots are never sent to us. To look up conditions, Sailfin sends a rounded position for weather and river flow, a nearby station ID for tides, and map tile requests for the area you view. Speaking a catch uses your phone's speech service, and Android's own backup can include your log. The <a href="/sailfin/privacy/">privacy policy</a> has the details.</p></details>
+<details><summary>How do I move my log to a new phone?</summary><p>In Sailfin, go to Settings → Your data → Back up and save the file somewhere you can reach. On the new phone, tap "New phone? Restore a backup" on the first screen, or Settings → Your data → Restore. Restoring replaces the log already on that phone, so if it has catches you want to keep, back it up first.</p></details>
+<details><summary>Where do the pictures and tips come from?</summary><p>Paintings by U.S. Fish and Wildlife Service artists and old fisheries plates (public domain), and AI-made illustrations checked against each fish's field marks. Tips come from fish and wildlife agencies. Every source is on the <a href="/sailfin/credits/">credits page</a>.</p></details>
+<p>Something else? <a href="mailto:support@snowfernlabs.com">Email Sailfin support</a>.</p>
 </section>
 
 </main>
 <footer class="site-footer shell">
-<a class="wordmark" href="/">Snowfern Labs</a>
-<nav aria-label="Footer"><a href="mailto:support@snowfernlabs.com">Support</a><a href="/sailfin/privacy/">Sailfin privacy</a></nav>
+<p class="wordmark">Snowfern Labs</p>
+<nav aria-label="Footer"><a href="/sailfin/">Sailfin</a><a href="/sailfin/privacy/">Privacy</a><a href="/sailfin/credits/">Credits</a><a href="mailto:support@snowfernlabs.com">Support</a></nav>
 </footer>
 </body>
 </html>
